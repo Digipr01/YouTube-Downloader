@@ -1,6 +1,6 @@
 # Youtube Downloader
-Downloads mp4 of youtube video
-I wanted to make mp3 downloader, conversion has problems, mp4 it is
+Downloads the audio of a video as a .m4a file
+Longer videos take longer to install!
 
 ## installation
 1. Run the following to download the required libraries

@@ -7,14 +7,14 @@ def Download(link):
     youtubeObject = 0
     try:
         youtubeObject = yt.YouTube(link)
-        youtubeObject = youtubeObject.streams.get_highest_resolution()
+        youtubeObject = youtubeObject.streams.get_audio_only()
     except errors.AgeRestrictedError:
         return 401, "Could not access video" #Unauthorised
     except errors.MembersOnly:
         return 401, "Could not access video" #Unauthorised
     except:
         return 404, "Could not find video" #Video not found
-    youtubeObject.download('Downloads', filename=f"{youtubeObject.title}.mp4")
+    youtubeObject.download(output_path='Downloads')
     try:
         pass
     except:
