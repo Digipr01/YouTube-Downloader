@@ -31,7 +31,7 @@ def onButtonPress(link):
         
 root = tk.Tk()
 root.geometry('400x250')
-root.title("Youtube Downloader")
+root.title("Youtube Downloader V1.0.1")
 
 textWindow = tk.Label(root, text="Insert yt link")
 textWindow.pack()
